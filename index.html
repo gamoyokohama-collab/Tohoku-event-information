@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TOHOKU BEAUTY COLLECTION 2026</title>
+<title>GAMO TOHOKU BEAUTY COLLECTION 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -772,6 +772,22 @@ footer {
         <div class="info-header-date">2026.08.31 Mon</div>
         <div class="info-header-time">✦ 10:00 〜 18:00 ✦</div>
       </div>
+
+      <!-- Google Maps: サンフェスタ仙台 -->
+      <div style="padding: 24px 40px 0;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5215.705886598591!2d140.9213143131659!3d38.255844358489455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f89880857749fe9%3A0x286baa0e4a19e5e1!2z55Sj5qWt6KaL5pys5biC5Lya6aSo77yI44K144Oz44OV44Kx44K544K_77yJ!5e1!3m2!1sja!2sjp!4v1776732735596!5m2!1sja!2sjp"
+          width="100%"
+          height="320"
+          style="border:0; border-radius:12px; display:block;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p style="font-size:11px; color:var(--mid); margin-top:8px; line-height:1.8;">
+          📍 〒984-0015　宮城県仙台市若林区卸町2-15-2　☎ 022-235-1100　／　地下鉄東西線「卸町駅」より徒歩約5分
+        </p>
+      </div>
       <div class="info-rows">
         <div class="info-row">
           <div class="info-label">Venue</div>
@@ -845,49 +861,29 @@ footer {
     <h2 class="sec-title fade-up">昨年の<em>開催の様子</em>をご覧ください</h2>
     <p class="sec-lead fade-up" style="margin-bottom: 40px;">初めて参加される方も、会場の雰囲気や熱気をぜひご確認ください。</p>
 
-    <!-- VIDEO PLACEHOLDER: src属性に動画URLを入れてください -->
-    <!-- YouTube埋め込みの場合: <iframe src="https://www.youtube.com/embed/【VIDEO_ID】" ...> -->
-    <!-- MP4直接の場合: <video src="【動画ファイルのパス】" controls ...> -->
     <div class="fade-up" style="
-      position: relative;
       width: 100%;
       max-width: 800px;
       margin: 0 auto;
       border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 16px 56px rgba(212,96,122,0.15);
-      background: var(--blush-mid);
-      aspect-ratio: 16/9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border: 2px dashed rgba(212,96,122,0.35);
+      box-shadow: 0 16px 56px rgba(212,96,122,0.18);
     ">
-      <!-- ▼▼▼ ここに動画が揃い次第、このブロック全体を <iframe> または <video> タグに置き換えてください ▼▼▼ -->
-      <div style="text-align: center; pointer-events: none; user-select: none;">
-        <div style="
-          width: 72px; height: 72px;
-          border-radius: 50%;
-          background: rgba(212,96,122,0.25);
-          border: 2px solid rgba(212,96,122,0.5);
-          display: flex; align-items: center; justify-content: center;
-          margin: 0 auto 20px;
-        ">
-          <div style="
-            width: 0; height: 0;
-            border-top: 18px solid transparent;
-            border-bottom: 18px solid transparent;
-            border-left: 28px solid var(--rose-mid);
-            margin-left: 5px;
-          "></div>
-        </div>
-        <p style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 15px; color: var(--rose-mid); font-weight: 700; letter-spacing: 0.1em;">紹介動画をここに埋め込みます</p>
-        <p style="font-size: 12px; color: rgba(196,176,176,0.7); margin-top: 8px; letter-spacing: 0.06em;">動画素材が揃い次第、このエリアに差し替えてください</p>
-      </div>
-      <!-- ▲▲▲ 置き換え範囲ここまで ▲▲▲ -->
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        style="display: block; width: 100%; aspect-ratio: 16/9; background: #1e0e12;"
+      >
+        <source src="東北BC案内動画.mp4" type="video/mp4">
+        <p style="color:#e8a0b0; padding:24px; text-align:center; font-size:14px;">
+          お使いのブラウザでは動画を再生できません。
+        </p>
+      </video>
     </div>
-    <!-- /VIDEO PLACEHOLDER -->
+    <!-- 動画ファイル「東北BC案内動画.mp4」をこのHTMLファイルと同じフォルダに置いてください -->
+    <!-- YouTube等にアップロードした場合は上の<video>タグを以下に置き換えてください: -->
+    <!-- <iframe src="https://www.youtube.com/embed/【VIDEO_ID】" width="100%" style="aspect-ratio:16/9; border:none; border-radius:20px;" allowfullscreen></iframe> -->
 
   </div>
 </section>
@@ -897,10 +893,9 @@ footer {
   <div class="section-inner">
     <div class="sec-eyebrow fade-up">Floor Map</div>
     <h2 class="sec-title fade-up">会場<em>フロアマップ</em></h2>
-    <p class="sec-lead fade-up" style="margin-bottom: 12px;">サンフェスタ仙台 1階展示場を使用します。</p>
+    <p class="sec-lead fade-up" style="margin-bottom: 12px;">サンフェスタ仙台 1階展示場（101・102ホール）を使用します。</p>
     <p class="fade-up" style="font-size: 12px; color: var(--mid); margin-bottom: 40px; letter-spacing: 0.04em;">※ ブース配置は確定後に更新いたします</p>
 
-    <!-- FLOOR MAP PLACEHOLDER -->
     <div class="fade-up" style="
       background: white;
       border-radius: 20px;
@@ -908,7 +903,7 @@ footer {
       box-shadow: 0 8px 40px rgba(212,96,122,0.08);
       border: 1.5px solid rgba(212,96,122,0.12);
     ">
-      <!-- MAP HEADER -->
+      <!-- HEADER -->
       <div style="
         background: linear-gradient(135deg, var(--blush-mid) 0%, var(--blush-bg) 100%);
         padding: 20px 32px;
@@ -917,159 +912,94 @@ footer {
         justify-content: space-between;
       ">
         <div>
-          <div style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 13px; font-weight: 700; color: var(--rose-mid); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 4px;">Sunfesta Sendai · 1F</div>
-          <div style="font-family: 'DM Serif Display', serif; font-size: 20px; color: white;">1階展示場</div>
+          <div style="font-family:'Zen Maru Gothic',sans-serif; font-size:13px; font-weight:700; color:var(--rose-mid); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:4px;">Sunfesta Sendai · 1F</div>
+          <div style="font-family:'DM Serif Display',serif; font-size:20px; color:white;">1階展示場 101・102</div>
         </div>
         <div style="
           background: rgba(212,96,122,0.2);
           border: 1px solid rgba(212,96,122,0.4);
           border-radius: 100px;
           padding: 6px 18px;
-          font-family: 'Zen Maru Gothic', sans-serif;
-          font-size: 12px;
-          font-weight: 700;
-          color: var(--rose-mid);
-          letter-spacing: 0.08em;
+          font-family:'Zen Maru Gothic',sans-serif;
+          font-size:12px; font-weight:700;
+          color:var(--rose-mid); letter-spacing:0.08em;
         ">80社以上 出展予定</div>
       </div>
 
-      <!-- SVG FLOOR PLAN (simplified, styled) -->
+      <!-- SVG FLOOR PLAN (仮置き・ブース配置確定後に差し替え) -->
       <div style="padding: 32px; overflow-x: auto;">
         <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" style="width:100%; min-width:560px; font-family:'Noto Sans JP',sans-serif;">
           <defs>
             <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
               <circle cx="2" cy="2" r="1" fill="#f0dde0" opacity="0.6"/>
             </pattern>
-          </defs>
-
-          <!-- Background -->
-          <rect width="900" height="420" fill="#fdf8f2" rx="8"/>
-          <rect width="900" height="420" fill="url(#dots)" rx="8"/>
-
-          <!-- Outer walls -->
-          <rect x="30" y="40" width="840" height="340" fill="none" stroke="#2a1f1f" stroke-width="3" rx="4"/>
-
-          <!-- Center dividing wall (dashed = movable partition) -->
-          <line x1="450" y1="40" x2="450" y2="380" stroke="#aaa" stroke-width="1.5" stroke-dasharray="6,4"/>
-
-          <!-- ── HALL 101 (left) ── -->
-          <rect x="30" y="40" width="420" height="340" fill="#fff7f8" stroke="none" rx="4"/>
-          <text x="235" y="230" text-anchor="middle" font-size="52" fill="#f2d0c8" font-weight="700" opacity="0.5">101</text>
-          <text x="235" y="262" text-anchor="middle" font-size="13" fill="#7a6060" letter-spacing="2">メインホール</text>
-
-          <!-- ── HALL 102 (right) ── -->
-          <rect x="450" y="40" width="420" height="340" fill="#fff4f6" stroke="none" rx="4"/>
-          <text x="665" y="230" text-anchor="middle" font-size="52" fill="#f2d0c8" font-weight="700" opacity="0.5">102</text>
-          <text x="665" y="262" text-anchor="middle" font-size="13" fill="#7a6060" letter-spacing="2">サブホール</text>
-
-          <!-- ── ROOMS top-left ── -->
-          <rect x="32" y="42" width="84" height="70" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
-          <text x="74" y="82" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM A</text>
-
-          <!-- ── ROOMS top-right ── -->
-          <rect x="784" y="42" width="84" height="70" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
-          <text x="826" y="82" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM C</text>
-
-          <!-- ── ROOMS bottom-left ── -->
-          <rect x="32" y="310" width="84" height="68" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
-          <text x="74" y="350" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM B</text>
-
-          <!-- ── ROOMS bottom-right ── -->
-          <rect x="784" y="310" width="84" height="68" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
-          <text x="826" y="350" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM D</text>
-
-          <!-- ── ENTRANCES (top: 来場者口) ── -->
-          <!-- Top entrance arrows (来場者口) -->
-          <g>
-            <rect x="150" y="30" width="60" height="14" fill="#d4607a" rx="3"/>
-            <text x="180" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
-          </g>
-          <g>
-            <rect x="240" y="30" width="60" height="14" fill="#d4607a" rx="3"/>
-            <text x="270" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
-          </g>
-          <g>
-            <rect x="590" y="30" width="60" height="14" fill="#d4607a" rx="3"/>
-            <text x="620" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
-          </g>
-          <g>
-            <rect x="680" y="30" width="60" height="14" fill="#d4607a" rx="3"/>
-            <text x="710" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
-          </g>
-
-          <!-- Entrance arrows pointing down -->
-          <line x1="180" y1="44" x2="180" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
-          <line x1="270" y1="44" x2="270" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
-          <line x1="620" y1="44" x2="620" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
-          <line x1="710" y1="44" x2="710" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
-
-          <!-- ── LOADING DOCKS (bottom) ── -->
-          <g>
-            <rect x="130" y="376" width="70" height="14" fill="#c9a84c" rx="3"/>
-            <text x="165" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 A</text>
-          </g>
-          <g>
-            <rect x="390" y="376" width="70" height="14" fill="#c9a84c" rx="3"/>
-            <text x="425" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 B</text>
-          </g>
-          <g>
-            <rect x="660" y="376" width="70" height="14" fill="#c9a84c" rx="3"/>
-            <text x="695" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 C</text>
-          </g>
-
-          <!-- ── EMERGENCY EXITS ── -->
-          <text x="34" y="400" font-size="9" fill="#888">非常口</text>
-          <text x="848" y="400" font-size="9" fill="#888" text-anchor="end">非常口</text>
-
-          <!-- ── TOILETS / FACILITIES (top center) ── -->
-          <rect x="360" y="50" width="36" height="36" fill="#e8f4fd" stroke="#a0c8e8" stroke-width="1" rx="4"/>
-          <text x="378" y="72" text-anchor="middle" font-size="11" fill="#5090c0">♿</text>
-          <rect x="404" y="50" width="36" height="36" fill="#fde8f4" stroke="#e8a0c8" stroke-width="1" rx="4"/>
-          <text x="422" y="72" text-anchor="middle" font-size="11" fill="#c05090">🚻</text>
-
-          <!-- ── BOOTH PLACEHOLDER GRID (101) ── -->
-          <!-- Row of placeholder booth outlines -->
-          <rect x="118" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <text x="145" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
-          <rect x="185" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <text x="212" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
-          <rect x="252" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <text x="279" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
-          <rect x="319" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <text x="346" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
-
-          <rect x="118" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <rect x="185" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <rect x="252" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <rect x="319" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-
-          <!-- ── BOOTH PLACEHOLDER GRID (102) ── -->
-          <rect x="548" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <text x="575" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
-          <rect x="615" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <text x="642" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
-          <rect x="682" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <text x="709" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
-          <rect x="749" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <text x="776" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
-
-          <rect x="548" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <rect x="615" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <rect x="682" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <rect x="749" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-
-          <!-- SEMINAR area hint (bottom 101) -->
-          <rect x="118" y="260" width="256" height="70" fill="rgba(200,184,216,0.12)" stroke="rgba(200,184,216,0.4)" stroke-width="1.5" stroke-dasharray="4,3" rx="4"/>
-          <text x="246" y="294" text-anchor="middle" font-size="11" fill="#9878b8" font-weight="700">特別セミナー会場（予定）</text>
-          <text x="246" y="312" text-anchor="middle" font-size="9" fill="#9878b8" opacity="0.7">※配置確定後に更新</text>
-
-          <!-- Arrow markers -->
-          <defs>
             <marker id="arrowDown" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto">
               <path d="M0,0 L6,0 L3,6 Z" fill="#d4607a"/>
             </marker>
           </defs>
-
+          <rect width="900" height="420" fill="#fdf8f2" rx="8"/>
+          <rect width="900" height="420" fill="url(#dots)" rx="8"/>
+          <rect x="30" y="40" width="840" height="340" fill="none" stroke="#2a1f1f" stroke-width="3" rx="4"/>
+          <line x1="450" y1="40" x2="450" y2="380" stroke="#aaa" stroke-width="1.5" stroke-dasharray="6,4"/>
+          <!-- Hall 101 -->
+          <rect x="30" y="40" width="420" height="340" fill="#fff7f8" stroke="none" rx="4"/>
+          <text x="235" y="230" text-anchor="middle" font-size="52" fill="#f2d0c8" font-weight="700" opacity="0.5">101</text>
+          <text x="235" y="262" text-anchor="middle" font-size="13" fill="#7a6060" letter-spacing="2">メインホール</text>
+          <!-- Hall 102 -->
+          <rect x="450" y="40" width="420" height="340" fill="#fff4f6" stroke="none" rx="4"/>
+          <text x="665" y="230" text-anchor="middle" font-size="52" fill="#f2d0c8" font-weight="700" opacity="0.5">102</text>
+          <text x="665" y="262" text-anchor="middle" font-size="13" fill="#7a6060" letter-spacing="2">サブホール</text>
+          <!-- Rooms -->
+          <rect x="32" y="42" width="84" height="70" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
+          <text x="74" y="82" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM A</text>
+          <rect x="784" y="42" width="84" height="70" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
+          <text x="826" y="82" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM C</text>
+          <rect x="32" y="310" width="84" height="68" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
+          <text x="74" y="350" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM B</text>
+          <rect x="784" y="310" width="84" height="68" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
+          <text x="826" y="350" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM D</text>
+          <!-- Entrances top -->
+          <rect x="150" y="30" width="60" height="14" fill="#d4607a" rx="3"/><text x="180" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
+          <rect x="240" y="30" width="60" height="14" fill="#d4607a" rx="3"/><text x="270" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
+          <rect x="590" y="30" width="60" height="14" fill="#d4607a" rx="3"/><text x="620" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
+          <rect x="680" y="30" width="60" height="14" fill="#d4607a" rx="3"/><text x="710" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
+          <line x1="180" y1="44" x2="180" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+          <line x1="270" y1="44" x2="270" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+          <line x1="620" y1="44" x2="620" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+          <line x1="710" y1="44" x2="710" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+          <!-- Loading docks -->
+          <rect x="130" y="376" width="70" height="14" fill="#c9a84c" rx="3"/><text x="165" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 A</text>
+          <rect x="390" y="376" width="70" height="14" fill="#c9a84c" rx="3"/><text x="425" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 B</text>
+          <rect x="660" y="376" width="70" height="14" fill="#c9a84c" rx="3"/><text x="695" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 C</text>
+          <text x="34" y="400" font-size="9" fill="#888">非常口</text>
+          <text x="848" y="400" font-size="9" fill="#888" text-anchor="end">非常口</text>
+          <!-- Facilities -->
+          <rect x="360" y="50" width="36" height="36" fill="#e8f4fd" stroke="#a0c8e8" stroke-width="1" rx="4"/>
+          <text x="378" y="72" text-anchor="middle" font-size="11" fill="#5090c0">♿</text>
+          <rect x="404" y="50" width="36" height="36" fill="#fde8f4" stroke="#e8a0c8" stroke-width="1" rx="4"/>
+          <text x="422" y="72" text-anchor="middle" font-size="11" fill="#c05090">🚻</text>
+          <!-- Booth placeholders 101 -->
+          <rect x="118" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="145" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
+          <rect x="185" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="212" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
+          <rect x="252" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="279" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
+          <rect x="319" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="346" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
+          <rect x="118" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
+          <rect x="185" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
+          <rect x="252" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
+          <rect x="319" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
+          <!-- Booth placeholders 102 -->
+          <rect x="548" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="575" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
+          <rect x="615" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="642" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
+          <rect x="682" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="709" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
+          <rect x="749" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="776" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
+          <rect x="548" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
+          <rect x="615" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
+          <rect x="682" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
+          <rect x="749" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
+          <!-- Seminar area -->
+          <rect x="118" y="260" width="256" height="70" fill="rgba(200,184,216,0.12)" stroke="rgba(200,184,216,0.4)" stroke-width="1.5" stroke-dasharray="4,3" rx="4"/>
+          <text x="246" y="294" text-anchor="middle" font-size="11" fill="#9878b8" font-weight="700">特別セミナー会場（予定）</text>
+          <text x="246" y="312" text-anchor="middle" font-size="9" fill="#9878b8" opacity="0.7">※配置確定後に更新</text>
           <!-- Legend -->
           <rect x="32" y="398" width="10" height="10" fill="rgba(212,96,122,0.15)" stroke="rgba(212,96,122,0.3)" stroke-width="1" stroke-dasharray="2,2" rx="1"/>
           <text x="48" y="407" font-size="9" fill="#7a6060">展示ブース（確定後更新）</text>
@@ -1081,35 +1011,16 @@ footer {
           <text x="496" y="407" font-size="9" fill="#7a6060">搬入口</text>
         </svg>
       </div>
+      <!-- ▼ ブース配置確定後、上のSVGブロックをこの img タグに差し替えてください -->
+      <!-- <img src="floormap.png" alt="会場フロアマップ" style="width:100%; border-radius:8px; display:block;"> -->
 
-      <!-- MAP NOTE -->
-      <div style="
-        padding: 16px 32px 24px;
-        border-top: 1px solid rgba(212,96,122,0.1);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      ">
-        <div style="
-          background: rgba(200,184,216,0.2);
-          border: 1px solid rgba(200,184,216,0.4);
-          border-radius: 100px;
-          padding: 4px 14px;
-          font-family: 'Zen Maru Gothic', sans-serif;
-          font-size: 11px;
-          font-weight: 700;
-          color: #9878b8;
-          white-space: nowrap;
-        ">✦ Coming Soon</div>
-        <p style="font-size: 12px; color: var(--mid); line-height: 1.7;">
-          詳細なブース配置図は、出展メーカー確定後に公開いたします。<br>
-          <!-- ▼▼▼ 正式マップ画像が揃い次第、上のSVGをこの <img> タグに置き換えてください ▼▼▼ -->
-          <!-- <img src="【マップ画像のパス】" alt="会場フロアマップ" style="width:100%; border-radius:8px;"> -->
-          <!-- ▲▲▲ 置き換えコメントここまで ▲▲▲ -->
+      <!-- NOTE -->
+      <div style="padding:16px 32px 24px; border-top:1px solid rgba(212,96,122,0.1);">
+        <p style="font-size:12px; color:var(--mid); line-height:1.9;">
+          詳細なブース配置図は、出展メーカー確定後に公開いたします。
         </p>
       </div>
     </div>
-    <!-- /FLOOR MAP PLACEHOLDER -->
 
   </div>
 </section>
