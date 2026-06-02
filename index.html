@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -307,7 +308,7 @@ section { padding: 88px 24px; }
 #about { background: var(--cream); }
 
 .about-visual {
-  position: relative;
+  position: relative; /* 修正: position: relative を追加 */
   background: linear-gradient(135deg, var(--blush-mid) 0%, var(--blush-bg) 100%);
   border-radius: 20px;
   overflow: hidden;
@@ -649,13 +650,13 @@ footer {
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
     <span class="nav-logo-text">GAMO Beauty Collection</span>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#takara-experience">Experience</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#video">Movie</a></li>
     <li><a href="#floormap">Map</a></li>
@@ -665,9 +666,7 @@ footer {
   </ul>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
-  <!-- Animated confetti -->
   <div class="hero-confetti" id="confetti"></div>
   <div class="hero-glow"></div>
 
@@ -692,17 +691,21 @@ footer {
     </div>
 
     <p class="hero-venue">
-      サンフェスタ仙台<br>
-      宮城県仙台市若林区卸町2-15-2　☎ 022-235-1100
+      【本会場】サンフェスタ仙台（展示会・セミナー）<br>
+      <span style="color: var(--gold-warm); font-weight: bold;">◆ 同時開催 ◆</span> 【別会場】タカラベルモント 仙台ショールーム（プレミアム体験会）<br>
+      <span style="font-size: 11px; opacity: 0.8;">※両会場は徒歩圏内（約3分）で行き来いただけます。</span>
     </p>
 
-    <a href="https://forms.gle/A19P8Dk3C62pnYwA9" target="_blank" rel="noopener" class="btn-hero">✦ ご来場のお申し込みはこちら</a>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 24px; position: relative; z-index: 10;">
+      <a href="https://forms.gle/A19P8Dk3C62pnYwA9" target="_blank" rel="noopener" class="btn-hero" style="padding: 18px 36px;">✦ ご来場のお申し込み</a>
+      <!-- TODO: 体験フォームのURLが確定したら下記プレースホルダーを差し替えてください -->
+      <a href="https://forms.gle/https://docs.google.com/forms/d/e/1FAIpQLSdvRzFKUKRaW_fTihDv7ehacMIbhpuwPzIEz0FPlubCIBY_eQ/viewform?usp=header" target="_blank" rel="noopener" class="btn-hero" style="background: linear-gradient(135deg, var(--gold) 0%, var(--gold-warm) 100%); color: var(--dark); box-shadow: 0 8px 32px rgba(201,168,76,0.35); padding: 18px 36px;">✦ 体験コーナーの事前予約</a>
+    </div>
   </div>
 
   <div class="hero-scroll">scroll</div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="section-inner">
     <div class="sec-eyebrow fade-up">About the Event</div>
@@ -732,7 +735,58 @@ footer {
   </div>
 </section>
 
-<!-- FEATURES -->
+<section id="takara-experience" style="background: var(--blush-mid); color: var(--cream); padding: 88px 24px;">
+  <div class="section-inner">
+    <div class="sec-eyebrow fade-up" style="color: var(--gold-warm);">Simultaneous Event</div>
+    <h2 class="sec-title fade-up" style="color: var(--white);">【同時開催】<br>タカラベルモント仙台ショールームで<br><em style="color: var(--gold-warm); font-style: normal;">プレミアム体験会</em>を開催！</h2>
+    <p class="sec-lead fade-up" style="color: var(--rose-pale); margin-bottom: 48px;">
+      サンフェスタ仙台から徒歩3分。別会場の特設ショールームにて、実際に見て・触れて・極上のリラクゼーションと最新機器を体感できる「事前予約制」の特別体験コーナーをご用意いたしました。
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 52px;">
+
+      <div class="fade-up" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.3); padding: 24px; border-radius: 12px; position: relative;">
+        <span style="position: absolute; top: 12px; right: 16px; font-family: 'DM Serif Display', serif; color: var(--gold-warm); font-size: 20px;">①</span>
+        <div style="font-size: 11px; color: var(--gold-warm); font-weight: bold; margin-bottom: 4px;">ESTESSIMO</div>
+        <div style="font-size: 16px; font-weight: 700; margin-bottom: 12px; color: var(--white);">エステシモ ヘッドスパ</div>
+        <p style="font-size: 12px; color: var(--rose-pale); line-height: 1.6;">髪・頭皮・心まで満たすホリスティックプログラム。オプションでJET CUBE体験も追加可能です。</p>
+      </div>
+
+      <div class="fade-up" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.3); padding: 24px; border-radius: 12px; position: relative;">
+        <span style="position: absolute; top: 12px; right: 16px; font-family: 'DM Serif Display', serif; color: var(--gold-warm); font-size: 20px;">②</span>
+        <div style="font-size: 11px; color: var(--gold-warm); font-weight: bold; margin-bottom: 4px;">LebeL ONE × 頭浸浴</div>
+        <div style="font-size: 16px; font-weight: 700; margin-bottom: 12px; color: var(--white);">ルベルワン × 頭浸浴</div>
+        <p style="font-size: 12px; color: var(--rose-pale); line-height: 1.6;">SNSで話題の「頭浸浴」と、潤いあふれる先進のヘアケアを同時に。心地よいせせらぎの時間を体感。</p>
+      </div>
+
+      <div class="fade-up" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.3); padding: 24px; border-radius: 12px; position: relative;">
+        <span style="position: absolute; top: 12px; right: 16px; font-family: 'DM Serif Display', serif; color: var(--gold-warm); font-size: 20px;">③</span>
+        <div style="font-size: 11px; color: var(--gold-warm); font-weight: bold; margin-bottom: 4px;">CHERESTY</div>
+        <div style="font-size: 16px; font-weight: 700; margin-bottom: 12px; color: var(--white);">シェレスティー</div>
+        <p style="font-size: 12px; color: var(--rose-pale); line-height: 1.6;">ダイヤモンドピーリングとミオリフターXによる美肌アプローチ。※脱毛機シェブノン5への変更も可。</p>
+      </div>
+
+      <div class="fade-up" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.3); padding: 24px; border-radius: 12px; position: relative;">
+        <span style="position: absolute; top: 12px; right: 16px; font-family: 'DM Serif Display', serif; color: var(--gold-warm); font-size: 20px;">④</span>
+        <div style="font-size: 11px; color: var(--gold-warm); font-weight: bold; margin-bottom: 4px;">ECILA</div>
+        <div style="font-size: 16px; font-weight: 700; margin-bottom: 12px; color: var(--white);">エシラ</div>
+        <p style="font-size: 12px; color: var(--rose-pale); line-height: 1.6;">サロンのミラーが未来を変える。次世代のスマートミラーがもたらす顧客体験の変化を実機で実演。</p>
+      </div>
+
+    </div>
+
+    <div class="fade-up" style="text-align: center; background: rgba(255,255,255,0.03); padding: 32px; border-radius: 16px; border: 1px dashed rgba(212, 96, 122, 0.4);">
+      <p style="font-size: 13px; margin-bottom: 20px; color: var(--rose-mid); letter-spacing: 0.05em;">
+        ※各体験は「1枠1時間」の完全事前予約制（入れ替え制）となります。<br>
+        時間割は現在調整中のため、フォームよりご希望の時間帯（第3希望まで）をお知らせください。
+      </p>
+      <!-- TODO: 体験フォームのURLが確定したら下記プレースホルダーを差し替えてください -->
+      <a href="https://forms.gle/【新規に作成した体験フォームのURL】" target="_blank" rel="noopener" class="btn-cta" style="background: linear-gradient(135deg, var(--gold) 0%, var(--gold-warm) 100%); color: var(--dark); box-shadow: 0 8px 32px rgba(201,168,76,0.4); padding: 18px 52px;">✦ 体験コーナーの事前予約はこちら</a>
+    </div>
+
+  </div>
+</section>
+
 <section id="features">
   <div class="section-inner">
     <div class="sec-eyebrow fade-up">Highlights</div>
@@ -761,7 +815,6 @@ footer {
   </div>
 </section>
 
-<!-- INFO -->
 <section id="info">
   <div class="section-inner">
     <div class="sec-eyebrow fade-up">Event Details</div>
@@ -773,7 +826,6 @@ footer {
         <div class="info-header-time">✦ 10:00 〜 18:00 ✦</div>
       </div>
 
-      <!-- Google Maps: サンフェスタ仙台 -->
       <div style="padding: 24px 40px 0;">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5215.705886598591!2d140.9213143131659!3d38.255844358489455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f89880857749fe9%3A0x286baa0e4a19e5e1!2z55Sj5qWt6KaL5pys5biC5Lya6aSo77yI44K144Oz44OV44Kx44K544K_77yJ!5e1!3m2!1sja!2sjp!4v1776732735596!5m2!1sja!2sjp"
@@ -785,15 +837,20 @@ footer {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <p style="font-size:11px; color:var(--mid); margin-top:8px; line-height:1.8;">
-          📍 〒984-0015　宮城県仙台市若林区卸町2-15-2　☎ 022-235-1100　／　地下鉄東西線「卸町駅」より徒歩約5分
+          📍 【本会場】 〒984-0015　宮城県仙台市若林区卸町2-15-2　☎ 022-235-1100　／　地下鉄東西線「卸町駅」より徒歩約5分
         </p>
       </div>
       <div class="info-rows">
         <div class="info-row">
           <div class="info-label">Venue</div>
           <div class="info-value">
+            <strong>【本会場（展示会・セミナー）】</strong><br>
             サンフェスタ仙台
-            <div class="info-sub">〒984-0015　宮城県仙台市若林区卸町2-15-2　☎ 022-235-1100</div>
+            <div class="info-sub" style="margin-bottom: 12px;">〒984-0015　宮城県仙台市若林区卸町2-15-2</div>
+
+            <strong>【別会場（プレミアム体験会）】</strong><br>
+            タカラベルモント 仙台ショールーム
+            <div class="info-sub">〒984-0015　宮城県仙台市若林区卸町2-10-5（本会場から徒歩約10分）</div>
           </div>
         </div>
         <div class="info-row">
@@ -804,6 +861,9 @@ footer {
           <div class="info-label">Contents</div>
           <div class="info-value">
             最新美容商材展示 ／ 新メニュー体験 ／ 販促企画提案 ／ 特別セミナー
+            <div class="info-sub" style="color: var(--rose); font-weight: bold; margin-top: 8px;">
+              ⚠️ 別会場の体験コーナー①〜④は「事前予約制（1枠1時間）」となります。時間割が未定のため、お申し込み時にご希望の時間帯をお伺いし、後日担当営業より確定時間を調整・ご連絡いたします。
+            </div>
             <div class="info-sub">※セミナー詳細は追って告知いたします</div>
           </div>
         </div>
@@ -819,7 +879,6 @@ footer {
   </div>
 </section>
 
-<!-- BRANCHES -->
 <section id="branches">
   <div class="section-inner">
     <div class="sec-eyebrow fade-up">Contact</div>
@@ -854,13 +913,13 @@ footer {
   </div>
 </section>
 
-<!-- VIDEO -->
 <section id="video" style="background: var(--ivory); padding: 88px 24px;">
   <div class="section-inner">
     <div class="sec-eyebrow fade-up">Introduction Movie</div>
     <h2 class="sec-title fade-up">昨年の<em>開催の様子</em>をご覧ください</h2>
     <p class="sec-lead fade-up" style="margin-bottom: 40px;">初めて参加される方も、会場の雰囲気や熱気をぜひご確認ください。</p>
 
+    <!-- TODO: Google Drive動画IDを確認してください。現在のID(1KDih4drIPPb9HP4Oxb7Lz0Ynx6mx1d1u)は文字数が通常より多く、正しくない可能性があります。 -->
     <div class="fade-up" style="
       width: 100%;
       max-width: 800px;
@@ -881,7 +940,6 @@ footer {
   </div>
 </section>
 
-<!-- FLOOR MAP -->
 <section id="floormap" style="background: var(--cream); padding: 88px 24px;">
   <div class="section-inner">
     <div class="sec-eyebrow fade-up">Floor Map</div>
@@ -896,7 +954,6 @@ footer {
       box-shadow: 0 8px 40px rgba(212,96,122,0.08);
       border: 1.5px solid rgba(212,96,122,0.12);
     ">
-      <!-- HEADER -->
       <div style="
         background: linear-gradient(135deg, var(--blush-mid) 0%, var(--blush-bg) 100%);
         padding: 20px 32px;
@@ -919,7 +976,6 @@ footer {
         ">80社以上 出展予定</div>
       </div>
 
-      <!-- SVG FLOOR PLAN (仮置き・ブース配置確定後に差し替え) -->
       <div style="padding: 32px; overflow-x: auto;">
         <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" style="width:100%; min-width:560px; font-family:'Noto Sans JP',sans-serif;">
           <defs>
@@ -934,15 +990,12 @@ footer {
           <rect width="900" height="420" fill="url(#dots)" rx="8"/>
           <rect x="30" y="40" width="840" height="340" fill="none" stroke="#2a1f1f" stroke-width="3" rx="4"/>
           <line x1="450" y1="40" x2="450" y2="380" stroke="#aaa" stroke-width="1.5" stroke-dasharray="6,4"/>
-          <!-- Hall 101 -->
           <rect x="30" y="40" width="420" height="340" fill="#fff7f8" stroke="none" rx="4"/>
           <text x="235" y="230" text-anchor="middle" font-size="52" fill="#f2d0c8" font-weight="700" opacity="0.5">101</text>
           <text x="235" y="262" text-anchor="middle" font-size="13" fill="#7a6060" letter-spacing="2">メインホール</text>
-          <!-- Hall 102 -->
           <rect x="450" y="40" width="420" height="340" fill="#fff4f6" stroke="none" rx="4"/>
           <text x="665" y="230" text-anchor="middle" font-size="52" fill="#f2d0c8" font-weight="700" opacity="0.5">102</text>
           <text x="665" y="262" text-anchor="middle" font-size="13" fill="#7a6060" letter-spacing="2">サブホール</text>
-          <!-- Rooms -->
           <rect x="32" y="42" width="84" height="70" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
           <text x="74" y="82" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM A</text>
           <rect x="784" y="42" width="84" height="70" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
@@ -951,7 +1004,6 @@ footer {
           <text x="74" y="350" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM B</text>
           <rect x="784" y="310" width="84" height="68" fill="#fdf0f3" stroke="#e8a0b0" stroke-width="1" rx="3"/>
           <text x="826" y="350" text-anchor="middle" font-size="10" fill="#d4607a" font-weight="700">ROOM D</text>
-          <!-- Entrances top -->
           <rect x="150" y="30" width="60" height="14" fill="#d4607a" rx="3"/><text x="180" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
           <rect x="240" y="30" width="60" height="14" fill="#d4607a" rx="3"/><text x="270" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
           <rect x="590" y="30" width="60" height="14" fill="#d4607a" rx="3"/><text x="620" y="41" text-anchor="middle" font-size="8" fill="white" font-weight="700">来場者口</text>
@@ -960,18 +1012,15 @@ footer {
           <line x1="270" y1="44" x2="270" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
           <line x1="620" y1="44" x2="620" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
           <line x1="710" y1="44" x2="710" y2="58" stroke="#d4607a" stroke-width="1.5" marker-end="url(#arrowDown)"/>
-          <!-- Loading docks -->
           <rect x="130" y="376" width="70" height="14" fill="#c9a84c" rx="3"/><text x="165" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 A</text>
           <rect x="390" y="376" width="70" height="14" fill="#c9a84c" rx="3"/><text x="425" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 B</text>
           <rect x="660" y="376" width="70" height="14" fill="#c9a84c" rx="3"/><text x="695" y="387" text-anchor="middle" font-size="8" fill="white" font-weight="700">搬入口 C</text>
           <text x="34" y="400" font-size="9" fill="#888">非常口</text>
           <text x="848" y="400" font-size="9" fill="#888" text-anchor="end">非常口</text>
-          <!-- Facilities -->
           <rect x="360" y="50" width="36" height="36" fill="#e8f4fd" stroke="#a0c8e8" stroke-width="1" rx="4"/>
           <text x="378" y="72" text-anchor="middle" font-size="11" fill="#5090c0">♿</text>
           <rect x="404" y="50" width="36" height="36" fill="#fde8f4" stroke="#e8a0c8" stroke-width="1" rx="4"/>
           <text x="422" y="72" text-anchor="middle" font-size="11" fill="#c05090">🚻</text>
-          <!-- Booth placeholders 101 -->
           <rect x="118" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="145" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
           <rect x="185" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="212" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
           <rect x="252" y="100" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="279" y="128" text-anchor="middle" font-size="8" fill="#c08090">ブース</text>
@@ -980,7 +1029,6 @@ footer {
           <rect x="185" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
           <rect x="252" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
           <rect x="319" y="160" width="55" height="45" fill="rgba(212,96,122,0.06)" stroke="rgba(212,96,122,0.2)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <!-- Booth placeholders 102 -->
           <rect x="548" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="575" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
           <rect x="615" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="642" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
           <rect x="682" y="100" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/><text x="709" y="128" text-anchor="middle" font-size="8" fill="#b09060">ブース</text>
@@ -989,11 +1037,9 @@ footer {
           <rect x="615" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
           <rect x="682" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
           <rect x="749" y="160" width="55" height="45" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-          <!-- Seminar area -->
           <rect x="118" y="260" width="256" height="70" fill="rgba(200,184,216,0.12)" stroke="rgba(200,184,216,0.4)" stroke-width="1.5" stroke-dasharray="4,3" rx="4"/>
           <text x="246" y="294" text-anchor="middle" font-size="11" fill="#9878b8" font-weight="700">特別セミナー会場（予定）</text>
           <text x="246" y="312" text-anchor="middle" font-size="9" fill="#9878b8" opacity="0.7">※配置確定後に更新</text>
-          <!-- Legend -->
           <rect x="32" y="398" width="10" height="10" fill="rgba(212,96,122,0.15)" stroke="rgba(212,96,122,0.3)" stroke-width="1" stroke-dasharray="2,2" rx="1"/>
           <text x="48" y="407" font-size="9" fill="#7a6060">展示ブース（確定後更新）</text>
           <rect x="200" y="398" width="10" height="10" fill="rgba(200,184,216,0.2)" stroke="rgba(200,184,216,0.5)" stroke-width="1" stroke-dasharray="2,2" rx="1"/>
@@ -1004,10 +1050,6 @@ footer {
           <text x="496" y="407" font-size="9" fill="#7a6060">搬入口</text>
         </svg>
       </div>
-      <!-- ▼ ブース配置確定後、上のSVGブロックをこの img タグに差し替えてください -->
-      <!-- <img src="floormap.png" alt="会場フロアマップ" style="width:100%; border-radius:8px; display:block;"> -->
-
-      <!-- NOTE -->
       <div style="padding:16px 32px 24px; border-top:1px solid rgba(212,96,122,0.1);">
         <p style="font-size:12px; color:var(--mid); line-height:1.9;">
           詳細なブース配置図は、出展メーカー確定後に公開いたします。
@@ -1018,20 +1060,23 @@ footer {
   </div>
 </section>
 
-<!-- CTA -->
 <section id="cta">
   <div class="cta-inner">
     <span class="cta-sparkle fade-up">✦ ✦ ✦</span>
     <h2 class="cta-title fade-up">さあ、一緒に<br>美しい未来を描こう。</h2>
     <p class="cta-sub fade-up">
       2026年8月31日（月）10:00 〜 18:00<br>
-      サンフェスタ仙台にてお待ちしております
+      サンフェスタ仙台 ＆ タカラベルモント仙台ショールームにてお待ちしております
     </p>
-    <a href="https://forms.gle/A19P8Dk3C62pnYwA9" target="_blank" rel="noopener" class="btn-cta fade-up">✦ ご来場のお申し込みはこちら</a>
+    <div class="fade-up" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; max-width: 800px; margin: 0 auto 16px;">
+      <a href="https://forms.gle/A19P8Dk3C62pnYwA9" target="_blank" rel="noopener" class="btn-cta" style="background: linear-gradient(135deg, var(--rose) 0%, #c05070 100%); color: white; box-shadow: 0 8px 32px rgba(212,96,122,0.35);">✦ ご来場のお申し込み</a>
+      <!-- TODO: 体験フォームのURLが確定したら下記プレースホルダーを差し替えてください -->
+      <a href="https://forms.gle/【新規に作成した体験フォームのURL】" target="_blank" rel="noopener" class="btn-cta">✦ 体験コーナーの事前予約</a>
+    </div>
+    <p class="fade-up" style="font-size: 11px; color: var(--rose-mid); letter-spacing: 0.05em; margin-top: 16px;">※プレミアム体験会は事前予約制（1枠1時間・調整制）です。来場申込と併せてご登録ください。</p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-logo">GAMO</div>
   <div class="footer-tag">Make a Beauty Communication</div>
